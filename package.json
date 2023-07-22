@@ -2,12 +2,31 @@
   "name": "tictactoe-in-10-frontend-frameworks",
   "private": true,
   "workspaces": [
-    "packages/*"
+    "react/*",
+    "angular/*",
+    "lit/*",
+    "alpine/*",
+    "preact/*",
+    "qwik/*",
+    "solid/*",
+    "svelte/*",
+    "vanillaJs/*",
+    "vue/*"
   ],
-  "dependencies": {
-    "vite": "^4.4.6"
+  "scripts": {
+    "start:react": "cd react/react-tictactoe && npm run dev -- --port 5171",
+    "start:alpine": "cd alpine/alpine-tictactoe && npm run dev -- --port 5172",
+    "start:angular": "cd angular/angular-tictactoe && npm run dev -- --port 5173",
+    "start:lit": "cd lit/lit-tictactoe && npm run dev -- --port 5174",
+    "start:preact": "cd preact/preact-tictactoe && npm run dev -- --port 5175",
+    "start:qwik": "cd qwik/qwik-tictactoe && npm run dev -- --port 5176",
+    "start:solid": "cd solid/solid-tictactoe && npm run dev -- --port 5177",
+    "start:svelte": "cd svelte/svelte-tictactoe && npm run dev -- --port 5178",
+    "start:vue": "cd vue/vue-tictactoe && npm run dev -- --port 5179",
+    "start:vanillaJs": "cd vanillaJs/vanillaJs-tictactoe && npm run dev -- --port 5180",
+    "start": "concurrently \"npm run start:react\" \"npm run start:alpine\" \"npm run start:angular\" \"npm run start:lit\" \"npm run start:preact\" \"npm run start:qwik\" \"npm run start:solid\" \"npm run start:svelte\" \"npm run start:vue\" \"npm run start:vanillaJs\""
   },
   "devDependencies": {
-    "lerna": "^7.1.4"
+    "concurrently": "^8.2.0"
   }
 }

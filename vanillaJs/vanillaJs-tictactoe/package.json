@@ -1,18 +1,14 @@
 {
-  "name": "tictactoe",
+  "name": "vanillajs-tictactoe",
   "private": true,
   "version": "0.0.0",
   "type": "module",
   "scripts": {
-    "dev": "vite",
+    "dev": "vite --open",
     "build": "vite build",
     "preview": "vite preview"
   },
-  "dependencies": {
-    "solid-js": "^1.7.8"
-  },
   "devDependencies": {
-    "vite": "^4.4.5",
-    "vite-plugin-solid": "^2.7.0"
+    "vite": "^4.4.5"
   }
 }

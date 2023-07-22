@@ -30,7 +30,9 @@
         </template>
       </div>
 
-      <div x-text="status" class="status"></div>
+      <div class="status">
+        <p x-text="status"></p>
+      </div>
 
       <button @click="reset()">Restart Game</button>
     </div>

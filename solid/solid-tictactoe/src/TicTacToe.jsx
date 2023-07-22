@@ -51,7 +51,6 @@ const TicTacToe = () => {
     setWinner(null);
   };
 
-  //onCleanup to clean up the effect
   onCleanup(() => {
     setBoard(null);
     setPlayer(null);
@@ -62,7 +61,7 @@ const TicTacToe = () => {
     return board().map((cell, index) => (
       <div
         key={index}
-        className={`cell C${index}${
+        className={`cell C${index} ${
           cell === "X" || cell === "O" ? "draw-animation" : ""
         }`}
         onClick={() => handleClick(index)}
