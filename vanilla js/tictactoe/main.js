@@ -9,7 +9,7 @@ document.querySelector("#app").innerHTML = `
     <div class="tic-tac-toe">
       <div class="board" id="board"></div>
       <div class="status" id="status">
-        <p>Next Player: X</p>
+        <p>Player Turn: X</p>
       </div>
       <button onclick="resetGame()">Restart Game</button>
     </div>

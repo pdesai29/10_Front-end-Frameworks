@@ -156,7 +156,7 @@ button:hover {
         <p>Player {winner} wins!</p>
       {/if}
     {:else}
-      <p>Next Player: {player}</p>
+      <p>Player Turn: {player}</p>
     {/if}
   </div>
   <button on:click={resetGame}>Restart Game</button>

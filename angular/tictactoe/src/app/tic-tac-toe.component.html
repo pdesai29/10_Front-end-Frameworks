@@ -1,0 +1,20 @@
+<div class="tic-tac-toe">
+  <div class="board">
+    <div
+      *ngFor="let cell of board; let index = index"
+      class="cell"
+      [ngClass]="{ 'draw-animation': cell === 'X' || cell === 'O' }"
+      (click)="handleClick(index)"
+    >
+      {{ cell }}
+    </div>
+  </div>
+  <div class="status">
+    <p *ngIf="winner">
+      <span *ngIf="winner === 'draw'">It's a Draw!</span>
+      <span *ngIf="winner !== 'draw'">Player {{ winner }} wins!</span>
+    </p>
+    <p *ngIf="!winner">Player Turn: {{ player }}</p>
+  </div>
+  <button (click)="resetGame()">Restart Game</button>
+</div>

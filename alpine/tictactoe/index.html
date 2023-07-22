@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Alpine</title>
+
+    <script
+      defer
+      src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"
+    ></script>
+    <link rel="icon" type="image/svg+xml" href="./alpine.js.svg" />
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <div id="app" x-data="app()" x-init="init()">
+      <a href="https://alpinejs.dev/start-here" target="_blank">
+        <img src="./alpine.js.svg" class="logo alpine" alt="alpine logo" />
+      </a>
+      <div class="board">
+        <template x-for="i in 9">
+          <div
+            class="cell"
+            x-text="squares[i-1]"
+            @click="makeMove(i-1)"
+            :class="{ 'x': squares[i-1] == 'X', 'o': squares[i-1] == 'O' }"
+          ></div>
+        </template>
+      </div>
+
+      <div x-text="status" class="status"></div>
+
+      <button @click="reset()">Restart Game</button>
+    </div>
+
+    <script src="main.js"></script>
+  </body>
+</html>

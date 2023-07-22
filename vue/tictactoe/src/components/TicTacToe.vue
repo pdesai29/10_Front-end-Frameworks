@@ -18,7 +18,7 @@
       <p v-if="winner">
         {{ winner === "draw" ? "It's a Draw!" : `Player ${winner} wins!` }}
       </p>
-      <p v-else>Next Player: {{ player }}</p>
+      <p v-else>Player Turn: {{ player }}</p>
     </div>
     <button @click="resetGame">Restart Game</button>
   </div>

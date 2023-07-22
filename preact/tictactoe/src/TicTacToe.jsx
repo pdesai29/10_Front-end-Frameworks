@@ -75,7 +75,7 @@ const TicTacToe = () => {
             <p>Player {winner} wins!</p>
           )
         ) : (
-          <p>Next Player: {player}</p>
+          <p>Player Turn: {player}</p>
         )}
       </div>
       <button onClick={resetGame}>Restart Game</button>

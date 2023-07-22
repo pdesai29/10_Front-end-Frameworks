@@ -75,7 +75,7 @@ export default component$(() => {
             <p>Player {winner.value} wins!</p>
           )
         ) : (
-          <p>Next Player: {player.value}</p>
+          <p>Player Turn: {player.value}</p>
         )}
       </div>
       <button onClick$={resetGame}>Restart Game</button>

@@ -33,7 +33,7 @@ export function initTicTacToe() {
       winner = "draw";
       statusElement.innerHTML = "It's a Draw!";
     } else {
-      statusElement.innerHTML = `Next Player: ${player}`;
+      statusElement.innerHTML = `Player Turn: ${player}`;
     }
   }
 
@@ -67,7 +67,7 @@ export function initTicTacToe() {
     player = "X";
     winner = null;
     renderBoard();
-    statusElement.innerHTML = "Next Player: X";
+    statusElement.innerHTML = "Player Turn: X";
   }
 
   renderBoard();
