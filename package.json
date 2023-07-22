@@ -1,0 +1,13 @@
+{
+  "name": "tictactoe-in-10-frontend-frameworks",
+  "private": true,
+  "workspaces": [
+    "packages/*"
+  ],
+  "dependencies": {
+    "vite": "^4.4.6"
+  },
+  "devDependencies": {
+    "lerna": "^7.1.4"
+  }
+}

@@ -1,0 +1,75 @@
+.tic-tac-toe {
+  text-align: center;
+  margin: 20px;
+  color: white;
+}
+
+.board {
+  display: grid;
+  grid-template-columns: repeat(3, 100px);
+  grid-template-rows: repeat(3, 100px);
+  gap: 2px;
+  padding: 2px;
+}
+
+.cell {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 48px;
+  background-color: #222;
+  color: #fff;
+  cursor: pointer;
+  transition: background-color 0.2s ease-in-out;
+}
+
+.C0,
+.C1,
+.C3 {
+  box-shadow: 0 0 10px #646cffaa;
+}
+
+.C6,
+.C4,
+.C2 {
+  box-shadow: 0 0 10px rgba(255, 255, 255, 1);
+}
+
+.C5,
+.C7,
+.C8 {
+  box-shadow: 0 0 10px rgba(172, 126, 244, 1);
+}
+.cell:hover {
+  background-color: #333;
+}
+
+.status {
+  margin-top: 10px;
+  font-size: 20px;
+  color: #fff;
+}
+
+button {
+  margin-top: 10px;
+  font-size: 25px;
+  padding: 8px 16px;
+  background-color: #333;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.2s ease-in-out;
+}
+
+button:hover {
+  color: black;
+  font-weight: bolder;
+  background: rgb(24, 182, 246);
+  background: linear-gradient(
+    90deg,
+    rgba(24, 182, 246, 1) 23%,
+    rgba(255, 255, 255, 1) 51%,
+    rgba(172, 126, 244, 1) 100%
+  );
+}
