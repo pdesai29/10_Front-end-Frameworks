@@ -8,8 +8,20 @@
   justify-content: center;
   min-height: 70vh;
 }
-
 .board {
+  display: grid;
+  grid-template-columns: repeat(3, 100px);
+  grid-template-rows: repeat(3, 100px);
+  gap: 2px;
+  padding: 2px;
+}
+
+.cell {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 48px;
+  background-color: #222;
   color: #fff;
   cursor: pointer;
   transition: background-color 0.2s ease-in-out;
