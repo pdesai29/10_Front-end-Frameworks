@@ -26,6 +26,7 @@
 
 .cell:hover {
   background-color: #333;
+  filter: drop-shadow(0 0 2em #00d8ff);
 }
 
 .status {
@@ -48,6 +49,5 @@ button {
 
 button:hover {
   background-color: #00d8ff;
-  color: black;
   font-weight: bolder;
 }

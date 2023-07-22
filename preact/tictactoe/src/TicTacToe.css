@@ -21,43 +21,12 @@
   color: #fff;
   cursor: pointer;
   transition: background-color 0.2s ease-in-out;
-}
-
-.C0,
-.C1,
-.C3 {
-  box-shadow: 0 0 10px rgb(52, 95, 158);
-}
-.C2,
-.C6,
-.C4 {
-  box-shadow: 0 0 10px #5088c7;
-}
-.C2:hover,
-.C6:hover,
-.C4:hover {
-  filter: drop-shadow(0 0 2em #5088c7);
-}
-.C0:hover,
-.C1:hover,
-.C3:hover {
-  filter: drop-shadow(0 0 2em rgb(52, 95, 158));
-}
-
-.C5,
-.C7,
-.C8 {
-  box-shadow: 0 0 10px rgba(134, 189, 229, 1);
-}
-.C5:hover,
-.C7:hover,
-.C8:hover,
-.C4:hover {
-  filter: drop-shadow(0 0 2em rgba(134, 189, 229, 1));
+  box-shadow: 0 0 10px #673ab8aa;
 }
 
 .cell:hover {
   background-color: #333;
+  filter: drop-shadow(0 0 2em #673ab8aa);
 }
 
 .status {
@@ -81,10 +50,5 @@ button {
 button:hover {
   color: white;
   font-weight: bolder;
-  background: rgb(52, 95, 158);
-  background: linear-gradient(
-    90deg,
-    rgba(52, 95, 158, 1) 70%,
-    rgba(134, 189, 229, 1) 100%
-  );
+  background-color: #673ab8aa;
 }

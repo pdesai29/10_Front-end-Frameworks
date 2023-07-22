@@ -28,17 +28,33 @@
 .C3 {
   box-shadow: 0 0 10px #646cffaa;
 }
-
+.C0:hover,
+.C1:hover,
+.C3:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
 .C6,
 .C4,
 .C2 {
   box-shadow: 0 0 10px rgba(255, 255, 255, 1);
 }
 
+.C6:hover,
+.C4:hover,
+.C2:hover {
+  filter: drop-shadow(0 0 2em rgba(255, 255, 255, 1));
+}
+
 .C5,
 .C7,
 .C8 {
   box-shadow: 0 0 10px rgba(172, 126, 244, 1);
+}
+
+.C5:hover,
+.C7:hover,
+.C8:hover {
+  filter: drop-shadow(0 0 2em rgba(172, 126, 244, 1));
 }
 .cell:hover {
   background-color: #333;
@@ -63,13 +79,12 @@ button {
 }
 
 button:hover {
-  color: black;
+  color: White;
   font-weight: bolder;
   background: rgb(24, 182, 246);
   background: linear-gradient(
     90deg,
     rgba(24, 182, 246, 1) 23%,
-    rgba(255, 255, 255, 1) 51%,
     rgba(172, 126, 244, 1) 100%
   );
 }

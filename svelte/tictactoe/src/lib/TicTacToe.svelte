@@ -141,7 +141,7 @@ button:hover {
   <div class="board">
     {#each board as cell, index}
       <div
-      class={`cell C${index}${cell === "X" || cell === "O" ? "draw-animation" : ""}`}
+      class={`cell C${index} ${cell === "X" || cell === "O" ? "draw-animation" : ""}`}
         on:click={() => handleClick(index)}
     >
         {cell !== null ?cell : ""}
